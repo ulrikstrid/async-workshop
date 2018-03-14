@@ -1,0 +1,26 @@
+{
+  "name": "async-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rxjs": "^5.5.7",
+    "spectacle-scripts": "2.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "async-await": "babel-node --presets env src/examples/asyncAwait.js",
+    "async-await:error": "babel-node --presets env src/examples/asyncAwaitWithError.js",
+    "callbacks": "babel-node --presets env src/examples/callbacks.js",
+    "callbacks:error": "babel-node --presets env src/examples/callbacksWithError.js",
+    "observables": "babel-node --presets env src/examples/observables.js",
+    "observables:error": "babel-node --presets env src/examples/observablesWithError.js",
+    "promises": "babel-node --presets env src/examples/promises.js",
+    "promises:error": "babel-node --presets env src/examples/promisesWithError.js"
+  }
+}
